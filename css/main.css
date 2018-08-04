@@ -1,0 +1,469 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,500,700');
+
+*{
+    padding:0;
+    margin: 0;
+    color:black;
+}
+
+body {
+    background: white;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    font-family: 'GoogleSans';
+    overflow-x: hidden;
+}
+
+button  {
+    cursor: pointer;
+}
+
+html, body {
+    height: 100%;
+}
+
+*:focus {
+    outline: none;
+}
+
+a, a:hover, a:focus, a:clicked {
+    color: #fff;
+    text-decoration: none !important;
+}
+
+.hero-main {
+    width: 100%;
+    height: 100%;
+    background: white;     
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+
+.hero-main .hero-sub {
+    width: 95%;
+    height: 90%;
+    background: url('../img/bg.jpg') 50% 90%;
+    background-attachment: fixed;
+    background-size: cover;   
+    position: relative;
+}
+
+.hero-main .hero-sub .overlay {
+    background: rgba(0, 0, 0, 0.45);
+    width: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;
+}
+
+.hero-main .hero-sub .overlay-line {
+    border-right: 1px solid #8c8c8c;
+    width: 16.66%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+
+section {
+    padding: 80px 0px;
+    background: white;
+}
+
+section .wrap {
+    width: 60%; 
+    margin: 0 auto;
+    text-align: center;
+}
+
+section .wrap .heading {
+    position: relative;
+    width: 100%;
+}
+
+section .wrap .heading h1 {
+    font-family: 'Oswald';
+    font-size: 150px;
+    color:#efefef;
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+}
+
+section .wrap .heading .sub-heading {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 25px;
+}
+
+section .wrap .heading .sub-heading p {
+    font-family: 'Oswald';
+    font-size: 50px;
+    color:#E6073C;
+    font-weight: 700;
+}
+
+section .wrap .content {
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+section .wrap .content p {
+    font-family: 'GoogleSans';
+    font-size: 19px;
+    color:black;
+    text-align: center;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.btn-long {
+    background: #E6073C;
+    color: white;
+    font-size: 15px;
+    font-family: 'GoogleSans';
+    border: 0;
+    margin-top: 60px;
+    width: 250px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.btn-short {
+    background: #E6073C;
+    color: white;
+    font-size: 13px;
+    font-family: 'GoogleSans';
+    margin-top: 20px;
+    width: 185px;
+    text-align: center;
+    padding: 15px;
+    float: left;
+    border: 0;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+section .red-wrap {
+    width: 100%;
+    padding: 30px 0;
+    background: url("../img/stats-bg.jpg");
+    background-size: cover;
+    text-align: center;
+}
+
+section .red-wrap .stat-wrap {
+    margin: 0 auto;
+    display: inline-block;
+    border-right: 1.5px solid white;
+    padding: 10px 70px;
+}
+
+section .red-wrap .stat-wrap h1 {
+    font-family: 'Oswald';
+    font-size: 35px;
+    color:white;
+    text-align: center;
+    margin: 0px;
+}
+
+section .red-wrap .stat-wrap p {
+    font-family: 'GoogleSans';
+    font-size: 16px;
+    color:white;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 15px;
+    text-transform: uppercase;
+}
+
+section .team-wrap {
+    display: inline-block;
+    margin: auto 0;
+    margin: 0px 30px;
+    margin-top: 60px;
+}
+
+section .profile {
+    margin-top: 30px;
+}
+
+section .team-wrap .profile-circle {
+    width: 190px;
+    height: 190px;
+    text-align: center;
+    background: #E6073C;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 100%;
+    position: relative;
+}
+
+section .team-wrap .img-circle {
+    width: 190px;
+    height: 190px;
+    border-radius: 100%;
+    position: absolute;
+    bottom: 3px;
+    right: 10px;
+}
+
+section .team-wrap h1 {
+    font-family: 'Oswald';
+    font-size: 30px;
+    color: black;
+    margin: 0 auto;
+    margin-top: 15px;
+    font-weight: 700;
+}
+
+section .team-wrap p {
+    font-family: 'GoogleSans';
+    font-size: 19px;
+    color: #E6073C;
+    margin: 0 auto;
+    font-weight: 700;
+}
+
+section .team-wrap a  {
+    margin:0px 3px;
+}
+
+section .team-wrap .profile-social {
+    margin-top: 10px;
+}
+
+section .team-wrap a i {
+    color: black;
+    font-size: 14px;
+}
+
+section .red-tab {
+    background-color:#E6073C;
+    background: linear-gradient(10deg, #77011c, #E6073C);
+    background: -webkit-linear-gradient(10deg, #77011c, #E6073C);
+    width: 100%;
+    padding: 40px 0px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+section .red-tab .life-content {
+    display: inline-block;
+    width: 40%;
+    margin: 0 auto;
+    vertical-align: top;
+    margin: 0 30px;
+}
+
+section .red-tab .life-content h1 {
+    font-family: 'Oswald';
+    font-weight: 600;
+    font-size: 35px;
+    text-align: left;
+    color: white;
+    margin: 0;
+}
+
+section .wrap-life {
+    width: 90%;
+    margin:0 auto;
+}
+
+section .red-tab .life-content p {
+    font-family: 'GoogleSans';
+    font-weight: 500;
+    font-size: 15px;
+    text-align: justify;
+    color: white;
+    line-height: 120%;
+    margin-top: 20px;
+}
+
+section .red-tab .life-img {
+    display: inline-block;
+    width: 40%;
+    margin: 0 auto;
+    margin: 0 50px;
+}
+
+section .red-tab .life-img div {
+    width: 100%;
+    min-height: 300px;
+    border:15px solid white;
+    background-size: cover;
+    background: url('../img/life.jpg');
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.17);
+}
+
+section .red-tab .social {
+    color: white;
+    text-align: left;
+}
+
+section .red-tab .social a {
+    margin: 0px 7px;
+}
+
+section .red-tab .social a i {
+    color: white;
+    font-size: 20px;
+}
+
+section .wrap-main {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+section .wrap-main .wrap-divide {
+    width: 45%;
+    margin: 20px;
+    display: inline-block;
+    margin: 0 auto;
+    vertical-align: text-top;
+}
+
+section .wrap-main .wrap-divide .rel {
+    position: relative;
+}
+
+section .wrap-main .wrap-divide .rel .img-detail {
+    width: 280px;
+    height: 450px;
+    position: absolute;
+    right: 30px;
+    border: 15px solid white;
+    margin: 0 auto;
+    top:0px;
+    background: url('../img/git.png');
+    background-size: cover;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.17);
+}
+
+section .wrap-main .wrap-divide .rel .img-side {
+    background-color:#E6073C;
+    background: linear-gradient(10deg, #77011c, #E6073C);
+    background: -webkit-linear-gradient(10deg, #77011c, #E6073C);
+    width: 280px;
+    height: 450px;
+    position: absolute;
+    top: 70px;
+    right: 140px;
+    margin: 0 auto;
+}
+
+section .wrap-main .wrap-divide .wrap-content {
+    height: 350px; 
+    align-items: center; 
+    margin-left: 40px;
+}
+
+section .wrap-main .wrap-divide  .wrap-content h1 {
+    font-family: 'GoogleSans';
+    font-weight: 700;
+    font-size: 35px;
+    text-align: left;
+    width: 40%
+}
+
+
+section .wrap-main .wrap-divide  .wrap-content p {
+    font-family: 'GoogleSans';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 110%;
+    color: black;
+    text-align: left;
+    width: 80%;
+}
+
+
+section .wrap-hor {
+    background: white;
+    padding: 20px;
+    display: inline-block;
+    position: relative;
+    width: 370px;
+    height: 100px;
+    border-radius: 20px;
+    margin-left: 40px;
+    box-shadow: 4px 4px 13px rgba(0, 0, 0, 0.1);
+}
+
+section .wrap-hor.count {
+    background-color:#E6073C;
+    background: linear-gradient(10deg, #77011c, #E6073C);
+    background: -webkit-linear-gradient(10deg, #77011c, #E6073C);
+    box-shadow: 4px 4px 13px rgba(0, 0, 0, 0.2);
+}
+
+
+section .wrap-hor.detail .wrap-cover {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 90%;
+    cursor: pointer;
+}
+
+section .wrap-hor.detail .wrap-cover h1 {
+    font-size: 23px;
+    font-family: 'GoogleSans';
+    font-weight: 700;
+    color: black;
+    margin: 0;
+}
+
+section .wrap-hor.detail .wrap-cover p {
+    font-size: 13px;
+    font-family: 'GoogleSans';
+    font-weight: 600;
+    color: grey;
+}
+
+section .wrap-hor.detail .wrap-cover h2 {
+    font-size: 14px;
+    font-family: 'GoogleSans';
+    font-weight: 700;
+    color: #E6073C;
+    margin-top: 15px;
+}
+
+
+section .wrap-hor.count .wrap-cover {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+section .wrap-hor.count .wrap-cover h1 {
+    font-size: 45px;
+    font-family: 'GoogleSans';
+    font-weight: 700;
+    color: white;
+    margin: 0;
+}
+
+section .wrap-hor.count .wrap-cover p {
+    font-size: 18px;
+    font-family: 'GoogleSans';
+    font-weight: 600;
+    color: white;
+}
